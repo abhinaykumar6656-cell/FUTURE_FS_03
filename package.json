@@ -1,0 +1,17 @@
+{
+  "name": "future_fs_03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx http-server . -p 5173 -c-1",
+    "test": "echo \"No automated tests configured yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42"
+  }
+}

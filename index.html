@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sweet Crumbs Bakery crafts premium cakes, pastries, cookies, croissants, and celebration desserts fresh every day.">
+    <title>Sweet Crumbs Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div class="loader" data-loader>
+        <div class="loader-mark">Sweet Crumbs</div>
+        <span></span>
+    </div>
+
+    <header class="header" data-header>
+        <div class="container navbar">
+            <a href="#home" class="logo" aria-label="Sweet Crumbs Bakery home">
+                <span class="logo-icon">SC</span>
+                <span>
+                    <strong>Sweet Crumbs</strong>
+                    <small>BAKERY</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu" data-nav-menu aria-label="Primary navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#story" class="nav-link">Story</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="./login.html" class="login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home" data-section>
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow">Freshly baked since 2010</span>
+                    <h1>Crafted with love, baked fresh every day.</h1>
+                    <p>Luxury cakes, flaky pastries, golden breads, and celebration desserts made each morning with premium ingredients and a slow, careful hand.</p>
+
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn-primary">Explore Menu</a>
+                        <a href="#story" class="btn btn-secondary">Our Story</a>
+                    </div>
+
+                    <div class="trust-row" aria-label="Bakery promises">
+                        <span>Fresh Daily</span>
+                        <span>Premium Ingredients</span>
+                        <span>Same Day Delivery</span>
+                    </div>
+
+                    <div class="hero-stats">
+                        <article>
+                            <strong>12K+</strong>
+                            <span>Happy Customers</span>
+                        </article>
+                        <article>
+                            <strong>250+</strong>
+                            <span>Custom Cakes</span>
+                        </article>
+                        <article>
+                            <strong>15+</strong>
+                            <span>Years Experience</span>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-parallax-wrap>
+                    <div class="radial-glow"></div>
+                    <img src="./assets/images/hero/cake.png" alt="Chocolate strawberry cake" class="main-cake" data-parallax="14">
+                    <img src="./assets/images/hero/croissant.png" alt="" class="float-asset float-croissant" data-parallax="-24">
+                    <img src="./assets/images/hero/cupcake.png" alt="" class="float-asset float-cupcake" data-parallax="18">
+                    <img src="./assets/images/hero/cookie.png" alt="" class="float-asset float-cookie" data-parallax="-16">
+                    <img src="./assets/images/hero/strawberry.png" alt="" class="float-asset float-strawberry" data-parallax="22">
+                    <img src="./assets/images/hero/wheat.png" alt="" class="float-asset float-wheat" data-parallax="-20">
+                </div>
+            </div>
+
+            <a href="#story" class="scroll-indicator" aria-label="Scroll to bakery story">
+                <span></span>
+            </a>
+        </section>
+
+        <section class="story" id="story" data-section>
+            <div class="container section-heading">
+                <span class="eyebrow">Signature experience</span>
+                <h2>From humble ingredients to a finished celebration cake.</h2>
+                <p>Follow the craft as flour, butter, chocolate, and strawberries become the centerpiece of the table.</p>
+            </div>
+
+            <div class="container story-stage">
+                <div class="story-card">
+                    <span>01</span>
+                    <h3>Ingredients</h3>
+                    <p>Flour, butter, milk, eggs, and chocolate are measured with a pastry chef's precision.</p>
+                </div>
+                <div class="story-card">
+                    <span>02</span>
+                    <h3>Mixing</h3>
+                    <p>The batter folds slowly until it becomes glossy, airy, and ready for the oven.</p>
+                </div>
+                <div class="story-card">
+                    <span>03</span>
+                    <h3>Baking</h3>
+                    <p>Warm oven heat lifts the layers into a soft, rich crumb with a delicate crust.</p>
+                </div>
+                <div class="story-card">
+                    <span>04</span>
+                    <h3>Decorating</h3>
+                    <p>Chocolate drizzle, cream swirls, berries, and a final gold detail complete the cake.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products" data-section>
+            <div class="container section-heading split-heading">
+                <div>
+                    <span class="eyebrow">Today's favorites</span>
+                    <h2>Premium bakes for every craving.</h2>
+                </div>
+                <a href="./pages/products.html" class="text-link">View all products</a>
+            </div>
+
+            <div class="container product-grid">
+                <article class="product-card">
+                    <button class="favorite-btn" aria-label="Favorite chocolate celebration cake">♡</button>
+                    <img src="./assets/images/hero/cake.png" alt="Chocolate celebration cake">
+                    <div>
+                        <span>Cakes</span>
+                        <h3>Chocolate Celebration Cake</h3>
+                        <p>Layered chocolate sponge, cream, berries, and glossy ganache.</p>
+                        <strong>$42</strong>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <button class="favorite-btn" aria-label="Favorite strawberry cupcake">♡</button>
+                    <img src="./assets/images/hero/cupcake.png" alt="Strawberry cupcake">
+                    <div>
+                        <span>Cupcakes</span>
+                        <h3>Strawberry Cream Cupcake</h3>
+                        <p>Vanilla sponge, whipped cream, chocolate drizzle, and fresh strawberry.</p>
+                        <strong>$6</strong>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <button class="favorite-btn" aria-label="Favorite butter croissant">♡</button>
+                    <img src="./assets/images/hero/croissant.png" alt="Butter croissant">
+                    <div>
+                        <span>Croissants</span>
+                        <h3>Golden Butter Croissant</h3>
+                        <p>Classic laminated pastry with crisp edges and a honeyed finish.</p>
+                        <strong>$5</strong>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <button class="favorite-btn" aria-label="Favorite chocolate chip cookie">♡</button>
+                    <img src="./assets/images/hero/cookie.png" alt="Chocolate chip cookie">
+                    <div>
+                        <span>Cookies</span>
+                        <h3>Dark Chocolate Cookie</h3>
+                        <p>Soft center cookie with rich chocolate chunks and a toasted edge.</p>
+                        <strong>$4</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about" data-section>
+            <div class="container about-grid">
+                <div>
+                    <span class="eyebrow">About the bakery</span>
+                    <h2>Small-batch baking with a polished, celebratory soul.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>Sweet Crumbs Bakery blends classic pastry technique with modern presentation. Every cake, croissant, and cookie is designed to feel personal, generous, and quietly luxurious.</p>
+                    <div class="mini-metrics">
+                        <span><strong>4.9</strong> Rating</span>
+                        <span><strong>38</strong> Daily Batches</span>
+                        <span><strong>6AM</strong> First Bake</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery" data-section>
+            <div class="container section-heading">
+                <span class="eyebrow">Gallery</span>
+                <h2>Warm textures, glossy finishes, and the joy of fresh pastry.</h2>
+            </div>
+            <div class="container gallery-grid">
+                <img src="./assets/images/hero/cake.png" alt="Chocolate cake gallery image">
+                <img src="./assets/images/hero/croissant.png" alt="Croissant gallery image">
+                <img src="./assets/images/hero/cupcake.png" alt="Cupcake gallery image">
+                <img src="./assets/images/hero/cookie.png" alt="Cookie gallery image">
+                <img src="./assets/images/hero/strawberry.png" alt="Strawberry gallery image">
+                <img src="./assets/images/hero/wheat.png" alt="Wheat gallery image">
+            </div>
+        </section>
+
+        <section class="testimonials" data-section>
+            <div class="container quote-card">
+                <span class="eyebrow">Customer love</span>
+                <blockquote>“The cake looked like art and tasted even better. Sweet Crumbs made our celebration feel effortless.”</blockquote>
+                <p>Amelia R. · Wedding client</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" data-section>
+            <div class="container contact-grid">
+                <div>
+                    <span class="eyebrow">Visit us</span>
+                    <h2>Fresh from the oven, every morning.</h2>
+                    <p>24 Baker Street, New York · Open 7:00 AM to 9:00 PM</p>
+                    <a href="mailto:hello@sweetcrumbs.com" class="btn btn-primary">Contact Bakery</a>
+                </div>
+                <form class="contact-form" aria-label="Contact form">
+                    <label>
+                        Name
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-secondary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <a href="#home" class="logo">
+                <span class="logo-icon">SC</span>
+                <span>
+                    <strong>Sweet Crumbs</strong>
+                    <small>BAKERY</small>
+                </span>
+            </a>
+            <p>Premium bakery experiences for daily rituals, gifts, and once-in-a-lifetime celebrations.</p>
+            <span>© 2026 Sweet Crumbs Bakery</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

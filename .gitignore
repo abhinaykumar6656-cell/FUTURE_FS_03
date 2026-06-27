@@ -1,0 +1,12 @@
+node_modules/
+tmp/
+.DS_Store
+*.log
+
+# Local environment files
+.env
+.env.*
+
+# Build output
+dist/
+build/
