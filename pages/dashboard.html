@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin dashboard for Sweet Crumbs Bakery.">
+    <title>Dashboard | Sweet Crumbs Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body class="dashboard-page">
+    <div class="dashboard-shell">
+        <aside class="dashboard-sidebar">
+            <div class="brand-sidebar">
+                <span>SC</span>
+                <div>
+                    <strong>Sweet Crumbs</strong>
+                    <p>Bakery Admin</p>
+                </div>
+            </div>
+
+            <nav class="dashboard-nav">
+                <a href="#overview" class="active">Overview</a>
+                <a href="#products">Products</a>
+                <a href="#orders">Orders</a>
+                <a href="#customers">Customers</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#settings">Settings</a>
+            </nav>
+
+            <button class="btn btn-secondary logout-btn" id="logoutBtn">Logout</button>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div>
+                    <span class="eyebrow">Dashboard</span>
+                    <h1>Admin workspace</h1>
+                </div>
+                <div class="dashboard-meta">
+                    <p>Signed in as <strong>admin@sweetcrumbs.com</strong></p>
+                </div>
+            </header>
+
+            <section class="dashboard-grid" id="overview">
+                <article class="dashboard-card">
+                    <h2>Site visits</h2>
+                    <p>Showcase key metrics and engagement data here.</p>
+                    <strong>18.2K</strong>
+                </article>
+                <article class="dashboard-card">
+                    <h2>Products</h2>
+                    <p>Manage premium bakery items with real-time updates.</p>
+                    <strong>28</strong>
+                </article>
+                <article class="dashboard-card">
+                    <h2>Orders</h2>
+                    <p>Track incoming orders and customer requests.</p>
+                    <strong>12</strong>
+                </article>
+                <article class="dashboard-card">
+                    <h2>Favorites</h2>
+                    <p>Products customers love most.</p>
+                    <strong>4.9 / 5</strong>
+                </article>
+            </section>
+
+            <section class="dashboard-panel dashboard-products-panel" id="products">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">Products</span>
+                        <h2>Manage bakery inventory</h2>
+                    </div>
+                    <button class="btn btn-primary" id="addProductBtn">Add product</button>
+                </div>
+                <p class="panel-copy">Add new bakery items, upload product images, and keep the storefront fresh for every season.</p>
+                <div class="product-manager">
+                    <div class="product-list" id="productList"></div>
+                </div>
+            </section>
+
+            <section class="dashboard-panel" id="orders">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">Orders</span>
+                        <h2>Customer orders</h2>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>No orders yet. This area is reserved for future order management features.</p>
+                </div>
+            </section>
+
+            <section class="dashboard-panel" id="customers">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">Customers</span>
+                        <h2>Guest profiles</h2>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>All customer accounts, loyalty details, and contact history will appear here once connected.</p>
+                </div>
+            </section>
+
+            <section class="dashboard-panel" id="analytics">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">Analytics</span>
+                        <h2>Performance insights</h2>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>Track conversions, popular products, and seasonal trends from the bakery storefront.</p>
+                </div>
+            </section>
+
+            <section class="dashboard-panel" id="settings">
+                <div class="panel-header">
+                    <div>
+                        <span class="eyebrow">Settings</span>
+                        <h2>Brand and account</h2>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <p>Update your admin details, website preferences, or account security settings here.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="product-modal" id="productModal" aria-hidden="true">
+        <div class="product-modal-panel" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+            <button class="modal-close" id="closeProductModal" aria-label="Close product manager">×</button>
+            <div class="modal-heading">
+                <span class="eyebrow">Product manager</span>
+                <h2 id="productModalTitle">Add New Bakery Item</h2>
+            </div>
+            <form class="product-form" id="productForm">
+                <label>
+                    Product Name
+                    <input type="text" name="name" placeholder="Chocolate Celebration Cake" required>
+                </label>
+                <label>
+                    Category
+                    <input type="text" name="category" placeholder="Cakes" required>
+                </label>
+                <label>
+                    Price
+                    <input type="text" name="price" placeholder="$42" required>
+                </label>
+                <label>
+                    Description
+                    <textarea name="description" rows="4" placeholder="Write a rich product description..." required></textarea>
+                </label>
+                <label>
+                    Upload image
+                    <input type="file" name="image" id="productImageInput" accept="image/*">
+                </label>
+                <div class="image-preview" id="productImagePreview">No image selected</div>
+                <input type="hidden" name="id" value="">
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary">Save Item</button>
+                    <button type="button" class="btn btn-secondary" id="cancelProductBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <script src="../firebase/firebase-config.js" defer></script>
+    <script src="../js/firebase.js" defer></script>
+    <script src="../js/auth.js" defer></script>
+    <script src="../js/dashboard.js" defer></script>
+</body>
+
+</html>

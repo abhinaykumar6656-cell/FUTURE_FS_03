@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sweet Crumbs Bakery product collection.">
+    <title>Products | Sweet Crumbs Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="../index.html" class="logo" aria-label="Sweet Crumbs Bakery home">
+                <span class="logo-icon">SC</span>
+                <span>
+                    <strong>Sweet Crumbs</strong>
+                    <small>BAKERY</small>
+                </span>
+            </a>
+            <nav class="nav-menu" aria-label="Primary navigation">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#story" class="nav-link">Story</a>
+                <a href="../products.html" class="nav-link active">Products</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#gallery" class="nav-link">Gallery</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+                <a href="../login.html" class="login-btn">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <section class="section-heading">
+            <div class="container">
+                <span class="eyebrow">Products</span>
+                <h1>Explore every Sweet Crumbs creation.</h1>
+                <p>Discover all premium cakes, cupcakes, cookies, croissants, and pastries made fresh daily.</p>
+            </div>
+        </section>
+
+        <section class="products-grid-section">
+            <div class="container product-grid" id="productsPageGrid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">SC</span>
+                <span>
+                    <strong>Sweet Crumbs</strong>
+                    <small>BAKERY</small>
+                </span>
+            </a>
+            <span>© 2026 Sweet Crumbs Bakery</span>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <script src="../firebase/firebase-config.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+
+</html>

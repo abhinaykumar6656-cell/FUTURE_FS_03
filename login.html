@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure login for Sweet Crumbs Bakery admin and customers.">
+    <title>Login | Sweet Crumbs Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body class="login-page">
+    <div class="login-shell">
+        <div class="login-panel">
+            <div class="brand-block">
+                <span class="brand-mark">SC</span>
+                <div>
+                    <strong>Sweet Crumbs</strong>
+                    <small>Bakery</small>
+                </div>
+            </div>
+
+            <div class="login-copy">
+                <p class="eyebrow">Welcome back</p>
+                <h1>Access your Sweet Crumbs dashboard.</h1>
+                <p>Login as admin to manage products and view the bakery website as a premium brand experience. Customers can login to explore the full storefront without admin controls.</p>
+            </div>
+
+            <form class="login-form" data-login-form>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </label>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+
+                <p class="login-status" aria-live="polite"></p>
+            </form>
+
+            <div class="login-links">
+                <a href="./index.html">Continue as visitor</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/auth.js" defer></script>
+</body>
+
+</html>

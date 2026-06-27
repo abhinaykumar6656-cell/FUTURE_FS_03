@@ -191,51 +191,12 @@
                     <span class="eyebrow">Today's favorites</span>
                     <h2>Premium bakes for every craving.</h2>
                 </div>
-                <a href="./pages/products.html" class="text-link">View all products</a>
+                <div class="product-toolbar">
+                    <a href="./pages/products.html" class="text-link">View all products</a>
+                </div>
             </div>
 
-            <div class="container product-grid">
-                <article class="product-card">
-                    <button class="favorite-btn" aria-label="Favorite chocolate celebration cake">♡</button>
-                    <img src="./assets/images/hero/cake.png" alt="Chocolate celebration cake">
-                    <div>
-                        <span>Cakes</span>
-                        <h3>Chocolate Celebration Cake</h3>
-                        <p>Layered chocolate sponge, cream, berries, and glossy ganache.</p>
-                        <strong>$42</strong>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <button class="favorite-btn" aria-label="Favorite strawberry cupcake">♡</button>
-                    <img src="./assets/images/hero/cupcake.png" alt="Strawberry cupcake">
-                    <div>
-                        <span>Cupcakes</span>
-                        <h3>Strawberry Cream Cupcake</h3>
-                        <p>Vanilla sponge, whipped cream, chocolate drizzle, and fresh strawberry.</p>
-                        <strong>$6</strong>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <button class="favorite-btn" aria-label="Favorite butter croissant">♡</button>
-                    <img src="./assets/images/hero/croissant.png" alt="Butter croissant">
-                    <div>
-                        <span>Croissants</span>
-                        <h3>Golden Butter Croissant</h3>
-                        <p>Classic laminated pastry with crisp edges and a honeyed finish.</p>
-                        <strong>$5</strong>
-                    </div>
-                </article>
-                <article class="product-card">
-                    <button class="favorite-btn" aria-label="Favorite chocolate chip cookie">♡</button>
-                    <img src="./assets/images/hero/cookie.png" alt="Chocolate chip cookie">
-                    <div>
-                        <span>Cookies</span>
-                        <h3>Dark Chocolate Cookie</h3>
-                        <p>Soft center cookie with rich chocolate chunks and a toasted edge.</p>
-                        <strong>$4</strong>
-                    </div>
-                </article>
-            </div>
+            <div class="container product-grid" id="homeProductGrid"></div>
         </section>
 
         <section class="about" id="about" data-section>
@@ -322,8 +283,14 @@
     <script src="https://unpkg.com/lenis@1.3.13/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+    <script src="./firebase/firebase-config.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/auth.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/products.js"></script>
 </body>
 
 </html>
