@@ -109,26 +109,78 @@
                 <p>Follow the craft as flour, butter, chocolate, and strawberries become the centerpiece of the table.</p>
             </div>
 
-            <div class="container story-stage">
-                <div class="story-card">
-                    <span>01</span>
-                    <h3>Ingredients</h3>
-                    <p>Flour, butter, milk, eggs, and chocolate are measured with a pastry chef's precision.</p>
+            <div class="container bake-story" data-bake-story>
+                <div class="bake-progress" aria-hidden="true">
+                    <span data-bake-progress></span>
                 </div>
-                <div class="story-card">
-                    <span>02</span>
-                    <h3>Mixing</h3>
-                    <p>The batter folds slowly until it becomes glossy, airy, and ready for the oven.</p>
+
+                <div class="bake-copy">
+                    <span class="bake-step" data-bake-step>01 / 07</span>
+                    <h3 data-bake-title>Ingredients arrive</h3>
+                    <p data-bake-text>Eggs, flour, butter, milk, and chocolate drift into place before the first mix begins.</p>
                 </div>
-                <div class="story-card">
-                    <span>03</span>
-                    <h3>Baking</h3>
-                    <p>Warm oven heat lifts the layers into a soft, rich crumb with a delicate crust.</p>
-                </div>
-                <div class="story-card">
-                    <span>04</span>
-                    <h3>Decorating</h3>
-                    <p>Chocolate drizzle, cream swirls, berries, and a final gold detail complete the cake.</p>
+
+                <div class="bake-scene" aria-hidden="true">
+                    <div class="oven-glow" data-oven-glow></div>
+                    <div class="bake-counter"></div>
+
+                    <div class="ingredient ingredient-flour" data-ingredient>
+                        <span>Flour</span>
+                    </div>
+                    <div class="ingredient ingredient-egg" data-ingredient>
+                        <span>Egg</span>
+                    </div>
+                    <div class="ingredient ingredient-milk" data-ingredient>
+                        <span>Milk</span>
+                    </div>
+                    <div class="ingredient ingredient-butter" data-ingredient>
+                        <span>Butter</span>
+                    </div>
+                    <div class="ingredient ingredient-chocolate" data-ingredient>
+                        <span>Chocolate</span>
+                    </div>
+
+                    <div class="mixing-bowl" data-bowl>
+                        <div class="batter" data-batter></div>
+                        <div class="mix-swirl swirl-one" data-swirl></div>
+                        <div class="mix-swirl swirl-two" data-swirl></div>
+                    </div>
+
+                    <div class="pour-stream" data-pour></div>
+
+                    <div class="baking-tray" data-tray>
+                        <div class="tray-batter" data-tray-batter></div>
+                    </div>
+
+                    <div class="oven" data-oven>
+                        <div class="oven-window"></div>
+                        <div class="oven-lines"></div>
+                    </div>
+
+                    <div class="rising-cake" data-rising-cake>
+                        <div class="cake-layer layer-bottom"></div>
+                        <div class="cake-layer layer-middle"></div>
+                        <div class="cake-layer layer-top"></div>
+                    </div>
+
+                    <div class="decorations" data-decorations>
+                        <span class="cream cream-one"></span>
+                        <span class="cream cream-two"></span>
+                        <span class="cream cream-three"></span>
+                        <span class="drizzle"></span>
+                        <span class="sprinkle sprinkle-one"></span>
+                        <span class="sprinkle sprinkle-two"></span>
+                        <span class="berry berry-one"></span>
+                        <span class="berry berry-two"></span>
+                        <span class="berry berry-three"></span>
+                    </div>
+
+                    <img src="./assets/images/hero/cake.png" alt="" class="bake-final-cake" data-final-cake>
+                    <div class="bake-products" data-bake-products>
+                        <img src="./assets/images/hero/cupcake.png" alt="">
+                        <img src="./assets/images/hero/cookie.png" alt="">
+                        <img src="./assets/images/hero/croissant.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
